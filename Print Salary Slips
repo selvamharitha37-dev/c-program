@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+    int n;
+    float salary;
+
+    printf("Enter number of employees: ");
+    scanf("%d", &n);
+
+    for(int i = 1; i <= n; i++) {
+        printf("Enter salary of employee %d: ", i);
+        scanf("%f", &salary);
+        printf("Employee %d Salary = %.2f\n", i, salary);
+    }
+
+    return 0;
+}
+O/P:
+Enter number of employees: 3
+Enter salary of employee 1: 25000
+Employee 1 Salary = 25000.00
+Enter salary of employee 2: 30000
+Employee 2 Salary = 30000.00
+Enter salary of employee 3: 28000
+Employee 3 Salary = 28000.00
