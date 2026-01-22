@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    int n, count = 0;
+    printf("Enter a number: ");
+    scanf("%d", &n);
+
+    if(n == 0) count = 1; // Handle 0 separately
+
+    while(n != 0) {
+        count++;
+        n /= 10;
+    }
+
+    printf("Number of digits = %d\n", count);
+    return 0;
+}
+O/P:
+Enter a number: 45678
+Number of digits = 5
