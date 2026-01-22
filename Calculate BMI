@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    float weight, height, bmi;
+
+    printf("Enter weight (kg): ");
+    scanf("%f", &weight);
+
+    printf("Enter height (meters): ");
+    scanf("%f", &height);
+
+    bmi = weight / (height * height);
+
+    printf("BMI = %.2f\n", bmi);
+    return 0;
+}
+O/P:
+Enter weight (kg): 70
+Enter height (meters): 1.75
+BMI = 22.86
