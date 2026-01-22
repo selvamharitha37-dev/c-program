@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+struct bank {
+    int accNo;
+    char name[20];
+    float balance;
+};
+
+int main() {
+    struct bank b;
+
+    printf("Enter account number: ");
+    scanf("%d", &b.accNo);
+    printf("Enter name: ");
+    scanf("%s", b.name);
+    printf("Enter balance: ");
+    scanf("%f", &b.balance);
+
+    printf("\nBank Account Details\n");
+    printf("Account No: %d\nName: %s\nBalance: %.2f\n",
+           b.accNo, b.name, b.balance);
+
+    return 0;
+}
+O/P:
+Enter account number: 12345
+Enter name: Kumar
+Enter balance: 15000
+
+Bank Account Details
+Account No: 12345
+Name: Kumar
+Balance: 15000.00
