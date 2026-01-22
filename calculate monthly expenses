@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    float rent, food, travel, total;
+
+    printf("Enter rent, food and travel expenses: ");
+    scanf("%f %f %f", &rent, &food, &travel);
+
+    total = rent + food + travel;
+    printf("Total monthly expenses = %.2f\n", total);
+
+    return 0;
+}
+O/P:
+Enter rent, food and travel expenses: 8000 5000 2000
+Total monthly expenses = 15000.00
