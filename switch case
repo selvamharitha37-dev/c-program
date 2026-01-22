@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+    int choice;
+
+    printf("Menu\n");
+    printf("1. Tea\n2. Coffee\n3. Juice\n");
+    printf("Enter your choice: ");
+    scanf("%d", &choice);
+
+    switch (choice) {
+        case 1: printf("You selected Tea\n"); break;
+        case 2: printf("You selected Coffee\n"); break;
+        case 3: printf("You selected Juice\n"); break;
+        default: printf("Invalid choice\n");
+    }
+
+    return 0;
+}
+
+o/P:
+Menu
+1. Tea
+2. Coffee
+3. Juice
+Enter your choice: 2
+You selected Coffee
