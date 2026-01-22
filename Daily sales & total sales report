@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    float sales[7], total=0;
+
+    for(int i=0;i<7;i++) {
+        scanf("%f",&sales[i]);
+        total += sales[i];
+    }
+
+    printf("Total Weekly Sales = %.2f\n", total);
+    return 0;
+}
+O/P:
+1000 1200 900 1100 1300 1500 1400
+Total Weekly Sales = 8400.00
