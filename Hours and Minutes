@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    int minutes, hours, remainingMinutes;
+
+    printf("Enter total minutes: ");
+    scanf("%d", &minutes);
+
+    hours = minutes / 60;
+    remainingMinutes = minutes % 60;
+
+    printf("Hours = %d, Minutes = %d\n", hours, remainingMinutes);
+    return 0;
+}
+O/P:
+Enter total minutes: 125
+Hours = 2, Minutes = 5
