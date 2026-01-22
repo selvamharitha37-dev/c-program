@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+struct mobile {
+    char brand[20];
+    char model[20];
+    float price;
+};
+
+int main() {
+    struct mobile m;
+
+    printf("Enter brand: ");
+    scanf("%s", m.brand);
+    printf("Enter model: ");
+    scanf("%s", m.model);
+    printf("Enter price: ");
+    scanf("%f", &m.price);
+
+    printf("\nMobile Details\n");
+    printf("Brand: %s\nModel: %s\nPrice: %.2f\n",
+           m.brand, m.model, m.price);
+
+    return 0;
+}
+O/P:
+Enter brand: Samsung
+Enter model: A14
+Enter price: 15000
+
+Mobile Details
+Brand: Samsung
+Model: A14
+Price: 15000.00
