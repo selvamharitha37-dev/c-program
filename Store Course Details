@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+struct course {
+    int code;
+    char name[30];
+    int duration;
+};
+
+int main() {
+    struct course c;
+
+    printf("Enter course code: ");
+    scanf("%d", &c.code);
+    printf("Enter course name: ");
+    scanf("%s", c.name);
+    printf("Enter duration (months): ");
+    scanf("%d", &c.duration);
+
+    printf("\nCourse Details\n");
+    printf("Code: %d\nName: %s\nDuration: %d months\n",
+           c.code, c.name, c.duration);
+
+    return 0;
+}
+O/P:
+Enter course code: 501
+Enter course name: CProgramming
+Enter duration (months): 6
+
+Course Details
+Code: 501
+Name: CProgramming
+Duration: 6 months
