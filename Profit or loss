@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+    float costPrice, sellingPrice;
+
+    printf("Enter cost price: ");
+    scanf("%f", &costPrice);
+
+    printf("Enter selling price: ");
+    scanf("%f", &sellingPrice);
+
+    if (sellingPrice > costPrice)
+        printf("Profit\n");
+    else if (sellingPrice < costPrice)
+        printf("Loss\n");
+    else
+        printf("No Profit No Loss\n");
+
+    return 0;
+}
+
+O/P:
+Enter cost price: 1000
+Enter selling price: 1200
+Profit
