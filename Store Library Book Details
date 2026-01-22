@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+struct book {
+    int id;
+    char title[30];
+    char author[20];
+};
+
+int main() {
+    struct book b;
+
+    printf("Enter book id: ");
+    scanf("%d", &b.id);
+    printf("Enter title: ");
+    scanf("%s", b.title);
+    printf("Enter author: ");
+    scanf("%s", b.author);
+
+    printf("\nBook Details\n");
+    printf("ID: %d\nTitle: %s\nAuthor: %s\n",
+           b.id, b.title, b.author);
+
+    return 0;
+}
+O/P:
+Enter book id: 10
+Enter title: CProgramming
+Enter author: Dennis
+
+Book Details
+ID: 10
+Title: CProgramming
+Author: Dennis
+
