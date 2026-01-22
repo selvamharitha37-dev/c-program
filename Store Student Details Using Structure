@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+struct student {
+    int roll;
+    char name[20];
+    int marks;
+};
+
+int main() {
+    struct student s;
+
+    printf("Enter roll number: ");
+    scanf("%d", &s.roll);
+    printf("Enter name: ");
+    scanf("%s", s.name);
+    printf("Enter marks: ");
+    scanf("%d", &s.marks);
+
+    printf("\nStudent Details\n");
+    printf("Roll: %d\nName: %s\nMarks: %d\n", s.roll, s.name, s.marks);
+
+    return 0;
+}
+O/P:
+Enter roll number: 101
+Enter name: Ravi
+Enter marks: 85
+
+Student Details
+Roll: 101
+Name: Ravi
+Marks: 85
