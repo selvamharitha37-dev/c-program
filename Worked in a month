@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int totalDays, absentDays, workedDays;
+
+    printf("Enter total days in month: ");
+    scanf("%d", &totalDays);
+
+    printf("Enter number of absent days: ");
+    scanf("%d", &absentDays);
+
+    workedDays = totalDays - absentDays;
+
+    printf("Number of days worked = %d\n", workedDays);
+
+    return 0;
+}
+O/P:
+Enter total days in month: 30
+Enter number of absent days: 4
+Number of days worked = 26
