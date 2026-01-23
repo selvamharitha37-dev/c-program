@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+struct item {
+    int id;
+    char name[20];
+    int qty;
+};
+
+int main() {
+    struct item i;
+
+    printf("Enter item id, name, quantity: ");
+    scanf("%d %s %d", &i.id, i.name, &i.qty);
+
+    printf("Inventory Item\n");
+    printf("ID: %d Name: %s Qty: %d\n", i.id, i.name, i.qty);
+
+    return 0;
+}
+O/P:
+Enter item id, name, quantity: 101 Pen 50
+Inventory Item
+ID: 101 Name: Pen Qty: 50
