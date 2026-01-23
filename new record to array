@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    int a[10]={10,20,30}, n=3;
+    int newVal=40;
+
+    a[n]=newVal;
+    n++;
+
+    for(int i=0;i<n;i++)
+        printf("%d ", a[i]);
+
+    return 0;
+}
+O/P:
+10 20 30 40
